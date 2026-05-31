@@ -1,0 +1,148 @@
+desiassist@gmail.com for github
+Aarav1508$
+
+insert into businesses (
+    id,
+    name,
+    category,
+    subcategory,
+    location,
+    rating,
+    views,
+    image,
+    description,
+    contact,
+    status,
+    rejection_reason,
+    is_featured,
+    creator_id,
+    updated_at
+)
+SELECT
+   gen_random_uuid() AS new_id,
+--  id,
+    'Website' as name,
+    category,
+    subcategory,
+    location,
+    rating,
+    views,
+    image,
+    description,
+    contact,
+    status,
+    rejection_reason,
+    is_featured,
+    creator_id,
+    updated_at
+FROM businesses where name = 'Chess Tutor';
+
+insert into deals (
+    id,
+    title,
+    business_id,
+    business_name,
+    discount_percent,
+    original_price,
+    deal_price,
+    image,
+    description,
+    category,
+    subcategory,
+    expiry_date,
+    status,
+    creator_id,
+    created_at
+)
+SELECT
+--   gen_random_uuid() AS new_id,
+    id,
+    '25% off' as title,
+    id as business_id,
+    name as business_name,
+    25 as discount_percent,
+    300 as original_price,
+    200 as deal_price,
+    image,
+    description,
+    category,
+    subcategory,
+    current_date + 100 as expiry_date,
+    'active' as status,
+    'system' as creator_id,
+    current_date as   created_at  
+FROM businesses where name = 'Party Rentals';
+
+
+insert into events (
+    id,
+    title,
+    date,
+    time,
+    location,
+    image,
+    description,
+    category,
+    subcategory,
+    organizer,
+    contact,
+    status,
+    rejection_reason,
+    is_trending,
+    creator_id,
+    created_at    
+)
+SELECT
+--   gen_random_uuid() AS new_id,
+    id,
+    name as title,
+    current_date + 100 as date,
+    current_time as time,
+    'NC' as location,
+    image,
+    description,
+    category,
+    subcategory,
+    name as organizer,
+    contact,
+    status,
+    rejection_reason,
+    'TRUE' as is_trending,
+    'system' as creator_id,
+    current_date as   created_at   
+FROM businesses where name = 'Party Rentals';
+
+GitHub Image to synch with Desi-Assist.com website 
+generate a image for website page similar size and dimensions for Party rentals like "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&auto=format&fit=crop"
+
+
+use this link as reference "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&auto=format&fit=crop" build same syntax for this link "https://github.com/Desiassist/images/blob/e050be6c5dc02669ddb38286c50b7acd4a91665e/desiAssist-Party-Rentals.png"
+
+
+Good Food Picture
+https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&auto=format&fit=crop
+https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&auto=format&fit=crop
+https://cdn.kuberpos.com/nagas-kitchen/66857ee41545d26053d697b1/logo.jpeg
+1000 Lower Shiloh Way, Morrisville, NC 27560
+nagasrtp@gmail.com
++1 (919) 748-3152
+
+738 Slash Pine Dr, Cary, NC 27519
++19193772545
+
+use this link as reference "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&auto=format&fit=crop" build same syntax for this link " https://cdn.kuberpos.com/nagas-kitchen/66857ee41545d26053d697b1/logo.jpeg"
+
+
+https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&auto=format&fit=crop
+https://images.unsplash.com/photo-1627610941550-9c8da94c4234?ixlib=rb-4.1.0\
+
+https://unsplash.com/photos/a-chess-board-with-pieces-30d4y92NR9U
+
+https://images.unsplash.com/photo-30d4y92NR9U?w=800&auto=format&fit=crop
+
+
+https://api.openverse.org/v1/images/788355c8-133c-49cf-8654-71cf9f0499a0/thumb/
+
+https://openverse.org/image/dfaeef9a-b09e-40f1-89d2-99e08c9ad44f?q=DJ&p=19
+
+https://pixabay.com/images/download/sammy-sander-headphones-4595492_1920.jpg
